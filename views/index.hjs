@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Jagannath Srinivasan | Personal Website</title>
+    <link rel='stylesheet' href='/stylesheets/main.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+
+  	<header>
+  		<div id='brand'>
+  			<img src='https://avatars3.githubusercontent.com/u/8244246?v=3&s=460'>
+  			<span>Jagannath Srinivasan</span>
+  		</div>
+  		<nav id='navlinks'>
+  			<ul>
+  				<li id="nav_about"><span class="nav-highlight">.</span>About</li>
+  				<li id="nav_resume"><span class="nav-highlight">.</span>Resume</li>
+  				<li id="nav_blog"><span class="nav-highlight">.</span>Blog</li>
+  			</ul>
+  		</nav>
+  	</header>
+
+	<div id="container">
+		
+	</div>
+
+	<footer>
+		<span><em>&copy; Jagannath Srinivasan 2015</em></span>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="/javascripts/main.js"></script>
+
   </body>
 </html>

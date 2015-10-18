@@ -1,0 +1,93 @@
+@primary-color: rgb(255, 64, 48);
+@secondary-color: #FFF;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	background-color: darken(@secondary-color, 5%);
+  	margin: 0 auto;
+}
+
+header {
+	background-color: @secondary-color;
+	width: 100%;
+	height: 60px;
+	vertical-align: middle;
+	padding: 5px 20px 5px 20px;
+	position: fixed;
+
+	* {
+		vertical-align: middle;
+	}
+}
+
+#brand {
+	float: left;
+	cursor: pointer;
+
+	* {
+		display: inline;
+		margin: 0 5px 0 5px;
+	}
+
+	img {
+		padding: 5px;
+		width: 50px;
+		border-radius: 50%;
+	}
+
+	span {
+		font-weight: bold;
+		font-size: 16px;
+	}
+}
+
+#navlinks {
+	float: right;
+
+	ul {
+		text-decoration: none;
+
+		li {
+			display: inline;
+			cursor: pointer;
+			margin: 0 10px 0 10px;
+
+			span.nav-highlight {
+				display: inline-block;
+				color: rgba(0,0,0,0);
+				background-color: darken(@secondary-color, 5%);
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				margin-right: 8px;
+
+				&.nav-highlight-active {
+					background-color: @primary-color !important;
+				}
+			}
+		}
+	}
+}
+
+a {
+  color: #00B7FF;
+}
+
+footer {
+	background-color: @secondary-color;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	// height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 0 15px 0;
+
+	span {
+		margin: 0 auto;
+	}
+}
