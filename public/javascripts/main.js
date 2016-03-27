@@ -4,7 +4,12 @@ var BG_COLOR = '#f2f2f2';
 
 $(document).ready(function() {
 	
-
+	// $('div#intro_bottom').click(function() {
+	// 	$('#intro').slideUp("medium", function() {
+	// 		$('.main').show();
+	// 		initialize_home();
+	// 	});
+	// });
 
 	$('#navlinks ul li').hover(function() {
 		$(this).find('span.nav-highlight').css('background-color', PRIMARY_COLOR);
@@ -13,6 +18,7 @@ $(document).ready(function() {
 	});
 
 	$('#navlinks ul li').click(function() {
+		$(window).scrollTop(0);
 		$('span.nav-highlight-active').removeClass('nav-highlight-active');
 		$(this).find('span.nav-highlight').toggleClass('nav-highlight-active');
 
@@ -30,17 +36,28 @@ $(document).ready(function() {
 				initialize_home();
 				break;
 		}
+
+		hide_all_notices();
 	});
 
 	$('#brand').click(function(event) {
+		$(window).scrollTop(0);
 		$('span.nav-highlight-active').removeClass('nav-highlight-active');
 		initialize_home();
+		hide_all_notices();
 	});
 
 });
 
 function initialize_home() {
 	$('body').css('background-color', BG_COLOR);
+	$('div#content').load('/api/home/', function(responseText, textStatus, jqXHR) {
+		if (textStatus === "error") {
+			$("#load-error").show();
+		}
+	});
+	clear_filters();
+	
 }
 
 function initialize_about() {
@@ -53,4 +70,9 @@ function initialize_resume() {
 
 function initialize_blog() {
 	$('body').css('background-color', 'yellow');
+}
+
+function hide_all_notices() {
+	$("div#load_error").slideUp('fast');
+	$("div#filter_bar").slideUp('fast');
 }
