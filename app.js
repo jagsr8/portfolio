@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/websitetest');
+// mongoose.connect('mongodb://localhost/websitetest');
+mongoose.connect('mongodb://jagsr8:sandmunch95@ds025439.mlab.com:25439/heroku_5z82w5jt');
 
 var routes = require('./routes/index');
 var home = require('./routes/home');
