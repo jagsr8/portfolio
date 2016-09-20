@@ -1,0 +1,41 @@
+input, textarea {
+	width: 80%;
+	min-width: 300px;
+	max-width: 600px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	border-radius: 5px;
+	border: 1px solid darken(@primary-color, 10%);
+	padding: 5px;
+	font-size: 14px; 
+	-webkit-appearance: none;
+
+	&[type='text'] {
+		max-width: 300px;
+	}
+
+	&[type='search'] {
+		
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-pair {
+	display: table-row;
+	text-align: left;
+
+	> * {
+		display: table-cell;
+		padding: 5px 20px 5px 5px;
+		vertical-align: top;
+	}
+
+	textarea {
+		height: 100px;
+		line-height: 14px;
+	}
+}

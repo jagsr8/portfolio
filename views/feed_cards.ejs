@@ -1,0 +1,22 @@
+<div class="card content-block">
+
+	<% for (var i = 0; i < blocks.length; i++) { %>
+
+	<div class="card-container" onclick="load_project(<%= blocks[i].serial %>)">
+		<div class="content-img" style="background-image: url('<%= blocks[i].images[0].imgpath %>')"></div>
+		<div class="content-details">
+			<div class="content-title">
+				<h3><%= blocks[i].title %></h3>
+			</div>
+			<div class="content-description">
+				<p><%= blocks[i].abstract %></p>
+			</div>
+			<div class="content-category">
+				<a class="category-<%= blocks[i].category %>"><%= blocks[i].category %></a>
+			</div>
+		</div>
+	</div>
+
+	<% } %>
+
+</div>

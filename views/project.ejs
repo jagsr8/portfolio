@@ -1,0 +1,28 @@
+<div id="project_container">
+
+	<div id="project_header">
+		
+		<div id="project_title">
+			<h1><%= block.title %></h1>
+		</div>
+		<ul id="project_subheader">
+			<li><a class="category-<%= block.category %>"><%= block.category %></a></li> |
+			<li><%= block.period %></li> |
+			<li><%= block.link ? block.link : 'No link available' %></li>
+		</ul>
+	</div>
+
+	<div class="image_carousel">
+		<div class="image_current" style="background-image: url('<%= block.images[0].imgpath %>');"></div>
+		<div class="image_list">
+			<% for (var j = 0; j < block.images.length; j++) { %>
+				<img src="<%= block.images[j].imgpath %>" alt="">
+			<% } %>
+		</div>
+	</div>
+
+	<div id="project_content">
+		<p><%= block.text %></p>
+	</div>
+
+</div>
