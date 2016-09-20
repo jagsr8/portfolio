@@ -1,0 +1,192 @@
+@blue-green: #2C4A52;
+@waterway: #537072;
+@haze: #8E9B97;
+@smog: #F4EBDB;
+
+@saltwater: #257985;
+@lagoon: #5EA8A7;
+@whitewash: #FFF;
+@raspberry: #FF4447;
+
+@primary-color: @saltwater;
+@highlight: contrast(@primary-color, darken(@primary-color, 50%), lighten(@primary-color, 50%));
+@darker: contrast(@primary-color, @highlight, @primary-color, 15%);
+@contrast: contrast(@highlight);
+@text: @highlight;
+
+// @primary-color: @blue-green;
+// @highlight: @smog;
+// @text: @highlight;
+
+// BASIC STYLES
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	color: @text;
+  	background-color: darken(@primary-color, 5%);
+  	margin: 0 auto;
+}
+
+a, .link {
+	color: @highlight;
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	background: linear-gradient(@highlight 50%, darken(@highlight, 5%) 50%);
+	padding: 5px 10px;
+	color: contrast(@highlight, @blue-green);
+	border-radius: 5px;
+	cursor: pointer;
+
+	&:hover {	
+        background: linear-gradient(lighten(@highlight, 5%) 50%, @highlight 50%);
+	}
+
+	&:focus {	
+        outline: none;
+	}
+
+	&.small {
+		font-size: 12px;
+	}
+
+	&.medium {
+		font-size: 14px;
+		line-height: 14px;
+		width: 100px;
+		height: 30px;
+	}
+
+	&.large {
+		font-size: 18px;
+	}
+}
+
+div.button-group {
+	text-align: center;
+	
+	> button {
+		display: inline-block;
+	}
+}
+
+// HEADER & FOOTER STYLES
+
+header {
+	background-color: @primary-color;
+	width: 100%;
+	height: 60px;
+	vertical-align: middle;
+	padding: 5px 20px 5px 20px;
+	position: fixed;
+	top: 0px;
+	z-index: 99999;
+
+	* {
+		vertical-align: middle;
+	}
+
+	div#brand {
+		float: left;
+		cursor: pointer;
+
+		* {
+			display: inline;
+			margin: 0 5px 0 5px;
+		}
+
+		img {
+			padding: 5px;
+			height: 55px;
+		}
+
+		span {
+			font-weight: bold;
+			font-size: 16px;
+		}
+	}
+
+	nav#navlinks {
+		float: right;
+
+		ul {
+			text-decoration: none;
+
+			li {
+				display: inline;
+				cursor: pointer;
+				margin: 0 10px 0 10px;
+
+				span.nav-highlight {
+					display: inline-block;
+					color: rgba(0,0,0,0);
+					background-color: darken(@primary-color, 5%);
+					width: 10px;
+					height: 10px;
+					border-radius: 50%;
+					margin-right: 8px;
+
+					&.nav-highlight-hover, &.nav-highlight-active {
+						background-color: @highlight !important;
+					}
+				}
+			}
+		}
+	}
+
+	button {
+		float: right;
+		margin: 12px 0 8px;
+	}
+}
+
+footer {
+	background-color: @primary-color;
+	width: 100%;
+	height: 42px;
+	position: fixed;
+	bottom: 0;
+	// height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 0 15px 0;
+	z-index: 99999;
+
+	span {
+		margin: 0 auto;
+	}
+}
+
+// BODY STYLES
+
+div#container {
+	margin-top: 60px;
+	margin-bottom: 42px;
+
+	div#filter_bar {
+		padding: 10px;
+		background: white;
+		width: 100%;
+		position: fixed;
+	}
+}
+
+// MIXINS
+
+.shadow-light-bottom {
+	box-shadow: 0px 1px 8px fade(#000, 8%);
+}
+
+.shadow-light-top {
+	box-shadow: 0px -1px 8px fade(#000, 8%);
+}
+
+.hover-shadow {
+	box-shadow: 0 6px 18px fade(#000, 8%), 0 3px 6px fade(#000, 12%);
+}

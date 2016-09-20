@@ -1,0 +1,67 @@
+@import "global.less";
+@import "elements.less";
+@import "forms.less";
+@import "projects.less";
+
+.main {
+	display: none;
+}
+
+div#intro {
+	z-index: 9999;
+	width: 100vw;
+	height: 100vh;
+	background: white;
+	text-align: center;
+
+	div#intro_top {
+		display: table-cell;
+		vertical-align: middle;
+		width: 100vw;
+		height: 85vh;
+
+		div#intro_img {
+			top: 30%;
+			box-sizing: border-box;
+
+			img {
+				padding: 10px;
+				width: 400px;
+				border-radius: 5%;
+				// background: radial-gradient(#FFF 15%, fade(#000, 12%) 30%);
+				background: fade(@darker, 100%);
+				// box-shadow: 0px 0px 8px fade(#000, 12%);
+			}
+		}
+
+		div#intro_name {
+			margin-top: 15px;
+			font-size: 3em;
+			color: @darker;
+		}
+
+		div#intro_desc {
+			font-style: oblique;
+			color: darken(@primary-color, 32%);
+		}
+	}
+
+	div#intro_bottom {
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		height: 15vh;
+		line-height: 15vh;
+		font-size: 4em;
+		font-style: oblique;
+		font-weight: bold;
+		color: darken(@darker, 24%);
+		background: darken(@darker, 8%);
+
+		&:hover {
+			color: darken(@darker, 18%);
+			background: darken(@darker, 6%);
+			cursor: pointer;
+		}
+	}
+}

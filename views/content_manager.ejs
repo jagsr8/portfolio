@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Content Manager</title>
+        <link rel='stylesheet' href='/stylesheets/content_manager.css' />
+    </head>
+    <body>
+
+      	<header class="shadow-light-bottom">
+      		<a href="/">
+                <div id='brand'>
+        			<img src='/images/logo.png'>
+        			<h2>Jagan Srini</h2>
+        		</div>
+            </a>
+            <!-- <button class='medium header'>New Post</button> -->
+      	</header>
+
+      	<div id="container">
+      		<div id="content">
+
+                <div id="new_post" class="content-block cardlist">
+                    <div class="content-abstract">
+                        <div class="content-text">
+                            <h2>Create Post</h2>
+                        </div>
+                        <div class="content-media">
+                            <div id="choose_post_type" class="button-group">
+                                <button id="new_post_project" class="medium" onclick="choose_project()">Project</button>
+                                <button id="new_post_blog" class="medium" onclick="choose_blog()">Blog</button>
+                            </div>
+                            <div id="new_post_forms" style="display: none;">
+                                <form id="new_project_form">
+                                    <div class="form-pair">
+                                        <label>Title</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Category</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Time Period</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Link</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Short Description</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Description</label>
+                                        <textarea type="text" name="" value=""></textarea>
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Images</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Skills</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                </form>
+                                <form id="new_blog_form">
+                                    <div class="form-pair">
+                                        <label>Title</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Category</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Time Period</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Link</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Short Description</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Description</label>
+                                        <textarea type="text" name="" value=""></textarea>
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Images</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                    <div class="form-pair">
+                                        <label>Skills</label>
+                                        <input type="text" name="" value="">
+                                    </div>
+                                </form>
+                                <div id="submit_buttons" class="button-group">
+                                    <button id="cancel_post" class="medium" onclick="cancel_post()">Cancel</button>
+                                    <button id="create_post" class="medium" onclick="create_post()" type="submit">Create Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="edit_post" class="content-block cardlist">
+                    <div class="content-abstract">
+                        <div class="content-text">
+                            <h2>Edit Post</h2>
+                        </div>
+                        <div class="content-media">
+                            <input type="search" name="" value="" placeholder="Search for post by name or description..." />
+                            <div id="edit_search_results"></div>
+                            <form id="edit_post_form" style="display: none;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="drafts" class="content-block cardlist">
+                    <div class="content-abstract">
+                        <div class="content-text">
+                            <h2>Drafts</h2>
+                        </div>
+                        <div class="content-media">
+                            <div id="drafts_list"></div>
+                            <form id="edit_draft_form" style="display: none;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      	</div>
+
+      	<footer class="shadow-light-top">
+      		<span><em>&copy; Jagannath Srinivasan 2016</em></span>
+          &#8226;
+            <span id="contact_link" class="link">Contact Me</span>
+      	</footer>
+
+      	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+      	<script src="/js/content_manager.js"></script>
+
+    </body>
+</html>

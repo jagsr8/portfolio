@@ -1,0 +1,32 @@
+<% for (var i = 0; i < blocks.length; i++) { %>
+
+<div class="section content-block" data-name="<%= i %>">
+	<div class="content-preview">
+		<iframe src="">
+			<% for (var k = 0; k < blocks[i].images.length; k++) { %>
+				<img src="<%= blocks[i].images[k].imgpath %>" alt="">
+			<% } %>
+		</iframe>
+	</div>
+	<div class="content-details">
+		<div class="content-title">
+			<h1><%= blocks[i].title %></h1>
+		</div>
+		<div class="content-meta">
+			<ul>
+				<li><a class="category-<%= blocks[i].category %>"><%= blocks[i].category %></a></li>
+				<li><%= blocks[i].date %></li>
+				<li>
+				<% for (var j = 0; j < blocks[i].tags.length; j++) { %>
+					<span class="content-tags"><%= blocks[i].tags[j].tag %></span>
+				<% } %>
+				</li>
+			</ul>
+		</div>
+		<div class="content-description">
+			<p><%= blocks[i].abstract %></p>
+		</div>
+	</div>
+</div>
+
+<% } %>
