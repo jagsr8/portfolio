@@ -4,7 +4,7 @@ function initialize_projects() {
 		if (textStatus === "error") {
 			$("#load-error").show();
 		}
-		$('div#content').append('<h1 style="padding-left: 20px;">Projects will be added soon!</h1>');
+		$('div#content').append('<h1 style="padding-left: 20px; padding-top: 20px;">Projects will be added soon!</h1>');
 	});
 	clear_filters();
 }
