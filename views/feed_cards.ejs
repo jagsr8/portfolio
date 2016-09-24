@@ -1,6 +1,9 @@
 <div class="card content-block" <% if (blocks.length == 0) { %>style="display: none;"<% } %>>
 
-	<% for (var i = 0; i < blocks.length; i++) { %>
+	<%
+	for (var i = blocks.length - 1; i >= 0; i--) {
+		if (blocks[i].published) {
+	%>
 
 	<div class="card-container" onclick="load_project(<%= blocks[i].serial %>)">
 		<div class="content-img" style="background-image: url('<%= blocks[i].images[0].imgpath %>')"></div>
@@ -11,12 +14,13 @@
 			<div class="content-description">
 				<p><%= blocks[i].abstract %></p>
 			</div>
-			<div class="content-category">
-				<a class="category-<%= blocks[i].category %>"><%= blocks[i].category %></a>
-			</div>
+			<div class="content-category category-<%= blocks[i].category %>"><%= blocks[i].category %></div>
 		</div>
 	</div>
 
-	<% } %>
+	<%
+		}
+	}
+	%>
 
 </div>

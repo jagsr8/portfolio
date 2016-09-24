@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 	$('#brand').click(function(event) {
 		$(window).scrollTop(0);
-		$('span.nav-highlight-active').removeClass('nav-highlight-active');
+		// $('span.nav-highlight-active').removeClass('nav-highlight-active');
 		initialize_home();
 		hide_all_notices();
 	});

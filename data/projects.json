@@ -1,1 +1,456 @@
-[]
+[
+	{
+		"serial"   : 0,
+		"title"    : "ME 2110 Design Competition",
+		"category" : "Hardware",
+		"period"   : "November 2014",
+		"link"     : "",
+		"abstract" : "Designed, fabricated, and assembled an automated machine.",
+		"text"     : "Designed, fabricated, and assembled an automated machine capable of performing multiple challenging tasks. The whole process was documented in a series of technical reports.",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/2110_1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/2110_2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/2110_3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"BASIC",
+			"Machining"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 1,
+		"title"    : "Kitchenette",
+		"category" : "Android",
+		"period"   : "January 2015",
+		"link"     : "http://devpost.com/software/kitchenette",
+		"abstract" : "Android app that provides TTS assistance for inexperienced chefs.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/kitchenette1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/kitchenette2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/kitchenette3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Android",
+			"Adobe Photoshop"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 2,
+		"title"    : "Handshake",
+		"category" : "Android, Wearables",
+		"period"   : "March 2015",
+		"link"     : "icgt15-16.herokuapp.com",
+		"abstract" : "Android app + Thalmic Myo integration for wirelessly sharing resumes at career fairs.",
+		"text"     : "Career fairs are often reminiscent of large stacks of printed resumes and long, frustrated lines of people. We are here to change this with the cutting edge capabilities of the Thalmic Myo. You no longer have to print out multiple copies of your resume or spend hours uploading resumes online on your dream companies' respective websites. Instead, send your resumes to your favorite employers just as you shake their hands, with just a few simple gestures. It's as easy as it gets!<br><br>Don't worry employers, we have you covered too - with our app, you can now keep track of all your potential candidates' resumes without any effort, as they automatically end up in one convenient directory on your phone. At the end of the day, you can export and view these resumes with one simple click of a button instead of a long trip hauling piles of messy resume sheets.",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/handshake1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/handshake2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/handshake3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Android",
+			"Thalmic Myos API",
+			"Parse",
+			"Bootstrap"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 3,
+		"title"    : "ICGT Flyers 2014-2015",
+		"category" : "Design",
+		"period"   : "May 2014 - May 2015",
+		"link"     : "http://facebook.com/GTIndiaClub",
+		"abstract" : "Flyers designed for India Club as one of the club's Graphic Designers.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/icgt11.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt12.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt13.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt14.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt15.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt16.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt17.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt18.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt19.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt110.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt111.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt112.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Adobe Photoshop",
+			"Adobe Illustrator"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 4,
+		"title"    : "ICGT Website",
+		"category" : "Web",
+		"period"   : "May 2015 - September 2015",
+		"link"     : "https://icgt15-16.herokuapp.com",
+		"abstract" : "Official website of India Club at Georgia Tech, 2015.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/icgtweb1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgtweb2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgtweb3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"jQuery",
+			"Bootstrap",
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"Mongoose"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 5,
+		"title"    : "Jam",
+		"category" : "Startup",
+		"period"   : "September 2015",
+		"link"     : "",
+		"abstract" : "App that incentivizes chores and good habits in kids through gamification.",
+		"text"     : "Did ideation, customer discovery, branding, and prototyping for an app startup that incentivizes chores and good habits in kids through gamification using a system of rewards with parental control.",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/jam1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/jam2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/jam3.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/jam4.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Adobe Illustrator",
+			"Adobe Photoshop",
+			"Sketch"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 6,
+		"title"    : "Crumbs",
+		"category" : "Web, Mobile, Startup",
+		"period"   : "September 2015",
+		"link"     : "",
+		"abstract" : "Travel-blogging platform that facilitates blogging for casual or non-travel-bloggers.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/crumbs1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/crumbs2.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"Mongoose",
+			"Swift",
+			"Xcode"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 7,
+		"title"    : "TalentFund",
+		"category" : "Web",
+		"period"   : "October 2015",
+		"link"     : "http://devpost.com/software/talentfund",
+		"abstract" : "Crowdsourcing web platform for encouraging underrepresented talent.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/talentfund1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/talentfund2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/talentfund3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"jQuery",
+			"AngularJS",
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"Mongoose"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 8,
+		"title"    : "ICGT Ticketing Platform",
+		"category" : "Web",
+		"period"   : "September 2015 - Current",
+		"link"     : "https://tickets.gtindiaclub.com",
+		"abstract" : "Pilot ticketing platform for India Club at Georgia Tech.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/icgtticketing1.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"jQuery",
+			"Node.js",
+			"Express.js",
+			"MySQL",
+			"Stripe API",
+			"Digital Ocean",
+			"Linux",
+			"Nginx"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 9,
+		"title"    : "ICGT Flyers 2015-2016",
+		"category" : "Design",
+		"period"   : "May 2015 - May 2016",
+		"link"     : "https://facebook.com/GTIndiaClub",
+		"abstract" : "Flyers designed for India Club as the club's VP of Marketing.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/icgt21.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt22.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt23.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt24.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt25.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt26.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt27.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt28.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Adobe Photoshop",
+			"Adobe Illustrator"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 10,
+		"title"    : "Pandango",
+		"category" : "Web",
+		"period"   : "January 2015 - May 2015",
+		"link"     : "https://pandango.herokuapp.com",
+		"abstract" : "Webapp providing movie recommendations from and for college students.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/pandango1.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/pandango2.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/pandango3.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"HTML5",
+			"CSS3",
+			"JavaScript",
+			"jQuery",
+			"Node.js",
+			"Express.js",
+			"MySQL",
+			"Passport.js",
+			"Rotten Tomatoes API",
+			"Adobe Photoshop"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	},
+	{
+		"serial"   : 11,
+		"title"    : "ICGT Flyers 2016-Present",
+		"category" : "Design",
+		"period"   : "May 2016 - Present",
+		"link"     : "https://facebook.com/GTIndiaClub",
+		"abstract" : "Flyers designed for India Club as one of the club's advisors.",
+		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"images"   : [
+			{
+				"imgpath" : "../images/projects/icgt31.png",
+				"local"   : true
+			},
+			{
+				"imgpath" : "../images/projects/icgt32.png",
+				"local"   : true
+			}
+		],
+		"tech"     : [
+			"Adobe Photoshop",
+			"Adobe Illustrator"
+		],
+		"endorsements" : 0,
+		"likes" : 0,
+		"comments" : [],
+		"published" : true
+	}
+]

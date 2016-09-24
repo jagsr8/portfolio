@@ -134,14 +134,27 @@ div.content-block {
 			}
 
 			div.content-details {
-				height: 150px;
+				height: 180px;
 				padding: 0 20px;
 				position: relative;
+				overflow: hidden;
+
+				div.content-title > h3 {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
+				div.content-description > p {
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
 
 				div.content-category {
 					position: absolute;
 					bottom: 0px;
 					width: 100%;
+					height: 50px;
 					margin: 0 -20px;
 					padding: 15px 20px;
 					background: fade( @contrast, 50%);
@@ -186,11 +199,22 @@ div.image_carousel {
 		padding: 10px;
 		background: rgba(0,0,0, 0.5);
 		text-align: center;
+		overflow-y: scroll;
 
-		img {
-			width: 100%;
+		div.carousel-thumbnail {
+			width: 80px;
+			height: 80px;
+			background-color: #000;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50%;
 			display: inline-block;
 			margin: 10px 0;
+			cursor: pointer;
+
+			&.active {
+				outline: 2px solid @primary-color;
+			}
 		}
 	}
 }

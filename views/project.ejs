@@ -6,23 +6,33 @@
 			<h1><%= block.title %></h1>
 		</div>
 		<ul id="project_subheader">
-			<li><a class="category-<%= block.category %>"><%= block.category %></a></li> |
+			<li><%= block.category %></li> |
 			<li><%= block.period %></li> |
-			<li><%= block.link ? block.link : 'No link available' %></li>
+			<li>
+			<% if(block.link) { %>
+				<a href="<%= block.link %>" target="_blank"><%= block.link %></a>
+			<% } else { %>
+				No link available
+			<% } %>
+			</li>
 		</ul>
 	</div>
+
+	<% if (block.images.length > 0) { %>
 
 	<div class="image_carousel">
 		<div class="image_current" style="background-image: url('<%= block.images[0].imgpath %>');"></div>
 		<div class="image_list">
 			<% for (var j = 0; j < block.images.length; j++) { %>
-				<img src="<%= block.images[j].imgpath %>" alt="">
+				<div id="img-<%= j %>" class="carousel-thumbnail <%= j == 0 ? 'active' : '' %>" style="background-image: url('<%= block.images[j].imgpath %>');"></div>
 			<% } %>
 		</div>
 	</div>
 
+	<% } %>
+
 	<div id="project_content">
-		<p><%= block.text %></p>
+		<!-- <p><%= block.text %></p> -->
 	</div>
 
 </div>

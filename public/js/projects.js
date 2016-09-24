@@ -4,9 +4,16 @@ function initialize_projects() {
 		if (textStatus === "error") {
 			$("#load-error").show();
 		}
-		$('div#content').append('<h1 style="padding-left: 20px; padding-top: 20px;">Projects will be added soon!</h1>');
+		// $('div#content').append('<h1 style="padding-left: 20px; padding-top: 20px;">Projects will be added soon!</h1>');
 	});
 	clear_filters();
+
+	$('div#content').on('click', 'div.carousel-thumbnail', function() {
+		$('div.carousel-thumbnail.active').removeClass('active');
+		var img = $(this).css('background-image');
+		$(this).closest('div.image_carousel').find('div.image_current').css('background-image', img);
+		$(this).addClass('active');
+	})
 }
 
 function load_project(id) {
