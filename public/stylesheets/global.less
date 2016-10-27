@@ -29,6 +29,7 @@ body {
   	color: @text;
   	background-color: darken(@primary-color, 5%);
   	margin: 0 auto;
+  	padding-top: 60px;
 }
 
 a, .link {
@@ -136,6 +137,12 @@ header {
 						background-color: @highlight !important;
 					}
 				}
+
+				&#menu_toggle {
+					display: none;
+					font-size: 22px;
+					margin-top: -5px;
+				}
 			}
 		}
 	}
@@ -143,6 +150,24 @@ header {
 	button {
 		float: right;
 		margin: 12px 0 8px;
+	}
+}
+
+div#subheader {
+	display: none;
+	width: 100%;
+	background: darken(@primary-color, 10%);
+	position: fixed;
+	top: 60px;
+
+	ul {
+		list-style: none;
+
+		li {
+			padding: 5px;
+			cursor: pointer;
+			font-size: 18px;
+		}
 	}
 }
 
@@ -166,7 +191,7 @@ footer {
 // BODY STYLES
 
 div#container {
-	margin-top: 60px;
+	// margin-top: 60px;
 	margin-bottom: 42px;
 
 	div#filter_bar {
@@ -174,6 +199,18 @@ div#container {
 		background: white;
 		width: 100%;
 		position: fixed;
+	}
+}
+
+// RESPONSIVE
+
+@media screen and (max-width:680px) {
+	header nav#navlinks ul li {
+		display: none;
+
+		&#menu_toggle {
+			display: block;
+		}
 	}
 }
 

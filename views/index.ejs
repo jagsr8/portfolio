@@ -31,13 +31,22 @@
             </div>
             <nav id='navlinks'>
                 <ul>
-                    <!-- <li id="nav_about"><span class="nav-highlight">.</span>About</li> -->
-                    <li id="nav_projects"><span class="nav-highlight">.</span>Projects</li>
-                    <li id="nav_resume"><span class="nav-highlight">.</span>Resume</li>
-                    <!-- <li id="nav_blog"><span class="nav-highlight">.</span>Blog</li> -->
+                    <!-- <li id="nav_about" class="menu-item"><span class="nav-highlight">.</span>About</li> -->
+                    <li id="nav_projects" class="menu-item"><span class="nav-highlight">.</span>Projects</li>
+                    <li id="nav_resume" class="menu-item"><span class="nav-highlight">.</span>Resume</li>
+                    <!-- <li id="nav_blog" class="menu-item"><span class="nav-highlight">.</span>Blog</li> -->
+                    <li id="menu_toggle" onclick="toggle_menu()">☰</li>
                 </ul>
             </nav>
         </header>
+        <div id="subheader">
+            <ul>
+                <!-- <li id="nav_about" class="menu-item">About</li> -->
+                <li id="nav_projects" class="menu-item">Projects</li>
+                <li id="nav_resume" class="menu-item">Resume</li>
+                <!-- <li id="nav_blog" class="menu-item">Blog</li> -->
+            </ul>
+        </div>
 
         <div id="container" class="main">
             <div id="load-error" style="display:none;" class="shadow-light-bottom">
