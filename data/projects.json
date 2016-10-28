@@ -37,7 +37,7 @@
 		"period"   : "January 2015",
 		"link"     : "http://devpost.com/software/kitchenette",
 		"abstract" : "Android app that provides TTS assistance for inexperienced chefs.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/kitchenette1.png",
@@ -101,7 +101,7 @@
 		"period"   : "May 2014 - May 2015",
 		"link"     : "http://facebook.com/GTIndiaClub",
 		"abstract" : "Flyers designed for India Club as one of the club's Graphic Designers.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/icgt11.png",
@@ -168,7 +168,7 @@
 		"period"   : "May 2015 - September 2015",
 		"link"     : "https://icgt15-16.herokuapp.com",
 		"abstract" : "Official website of India Club at Georgia Tech, 2015.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/icgtweb1.png",
@@ -242,7 +242,7 @@
 		"period"   : "September 2015",
 		"link"     : "",
 		"abstract" : "Travel-blogging platform that facilitates blogging for casual or non-travel-bloggers.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/crumbs1.png",
@@ -273,7 +273,7 @@
 		"period"   : "October 2015",
 		"link"     : "http://devpost.com/software/talentfund",
 		"abstract" : "Crowdsourcing web platform for encouraging underrepresented talent.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/talentfund1.png",
@@ -311,7 +311,7 @@
 		"period"   : "September 2015 - Current",
 		"link"     : "https://tickets.gtindiaclub.com",
 		"abstract" : "Pilot ticketing platform for India Club at Georgia Tech.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/icgtticketing1.png",
@@ -343,7 +343,7 @@
 		"period"   : "May 2015 - May 2016",
 		"link"     : "https://facebook.com/GTIndiaClub",
 		"abstract" : "Flyers designed for India Club as the club's VP of Marketing.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/icgt21.png",
@@ -394,7 +394,7 @@
 		"period"   : "January 2015 - May 2015",
 		"link"     : "https://pandango.herokuapp.com",
 		"abstract" : "Webapp providing movie recommendations from and for college students.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/pandango1.png",
@@ -433,7 +433,7 @@
 		"period"   : "May 2016 - Present",
 		"link"     : "https://facebook.com/GTIndiaClub",
 		"abstract" : "Flyers designed for India Club as one of the club's advisors.",
-		"text"     : "Text project description\n\nLorem ipsum dolor sit amet",
+		"text"     : "",
 		"images"   : [
 			{
 				"imgpath" : "../images/projects/icgt31.png",

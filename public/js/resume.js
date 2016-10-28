@@ -4,6 +4,8 @@ function initialize_resume() {
 		if (textStatus === "error") {
 			$("#load-error").show();
 		}
+
+		$('#intro_loading').fadeOut();
 	});
 	clear_filters();
 }

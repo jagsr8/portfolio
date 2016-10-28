@@ -5,6 +5,7 @@ function initialize_projects() {
 			$("#load-error").show();
 		}
 		// $('div#content').append('<h1 style="padding-left: 20px; padding-top: 20px;">Projects will be added soon!</h1>');
+		$('#intro_loading').fadeOut();
 	});
 	clear_filters();
 
@@ -18,13 +19,15 @@ function initialize_projects() {
 
 function load_project(id) {
 	$('div#project_detail').fadeOut('slow').remove();
-	$('div#content').append('<div id="project_detail" style="display: none;"></div>');
+	$('div#content').append('<div id="project_detail"><div id="project_loading" class="loading"></div></div>');
+	$('#project_loading').show();
 	$('div#project_detail').load('/api/projects/project/' + id, function(responseText, textStatus, jqXHR) {
 		if (textStatus === "error") {
 			$("#load-error").show();
 		}
 		$('div#project_detail').fadeIn('slow');
-		$('html, body').animate({
+	    $('#project_loading').fadeOut();
+	    $('html, body').animate({
 	        scrollTop: $('div#project_detail').offset().top - 60
 	    }, 300);
 	});

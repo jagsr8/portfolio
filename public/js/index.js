@@ -1,8 +1,10 @@
 $(document).ready(function() {
 	// initialize_home();
+	$('#intro_loading').hide();
 	
 	$('div#intro_bottom').click(function() {
 		$('#intro').slideUp("medium", function() {
+			$('#intro_loading').show();
 			$('.main').show();
 			initialize_projects();
 		});
@@ -15,6 +17,7 @@ $(document).ready(function() {
 	});
 
 	$('li.menu-item').click(function() {
+		$('#intro_loading').show();
 		$(window).scrollTop(0);
 		var selection = $(this).prop('id');
 		$('span.nav-highlight-active').removeClass('nav-highlight-active');
